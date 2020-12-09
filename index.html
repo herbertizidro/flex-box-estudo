@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Lorem Ipsum - Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</title>
+    <meta charset="utf-8">
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    
+    </head>
+    
+    
+    <style>
+        
+        *{
+            font-family: 'PT Sans', sans-serif;
+        }
+        
+        body, h1, h2, h3, h4, h4, h6, p, span{
+            margin: 0px;
+        }
+        
+        ul{
+            list-style: none;
+            margin: 0px;
+        }
+        
+        /* NAVBAR */
+        
+        /* parte superior com o horário de funcionamento, telefone e endereço */
+        
+        .container-navbar-sup-bg{
+            background: #122ab2;
+        }
+        
+        .container-navbar-sup{
+            display: flex; /* define a propriedade flex */
+            justify-content: space-between; /* um na ponta, um no meio, outro na outra ponta */
+            color: white;
+            padding: 5px; 
+            flex-wrap: wrap; /* pra quebrar a linha quando a largura diminuir */
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        
+        .container-navbar-sup a{
+            text-decoration: none;
+            color: white;
+        }
+        
+        /* parte inferior com o logo e as seções */
+        
+        .container-navbar-inf-bg{
+            background: #2c70ff;
+        }
+        
+        .container-navbar-inf{
+            display: flex;
+            justify-content: space-between; /* dispõe os itens horizontalmente */
+            align-items: center; /* alinha os itens ao centro verticalmente */
+            color: white;
+            flex-wrap: wrap;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        
+        .container-navbar-inf ul{
+            display: flex; 
+            flex-wrap: wrap;
+        }
+        
+        .container-navbar-inf li{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .container-navbar-inf li+li{
+            margin-left: 30px;
+        }
+        
+        .container-navbar-inf a{
+            text-decoration: none;
+            color: white;
+        }
+        
+        /* H1 INTRODUÇÃO */
+        
+        .intro{
+            padding: 60px 10px;
+            max-width: 960px;
+            margin: 0 auto;
+            line-height: 1;
+            font-size: 40px;
+        }
+        
+        /* SEÇÃO SOBRE */
+        
+        .sobre{
+            display: flex;
+            border-top: 2px solid #2c70ff;
+            border-bottom: 2px solid #2c70ff;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 50px 0;
+            flex-wrap: wrap;
+            
+        }
+        
+        .sobre-info{
+            flex-grow: 2;
+            flex-shrink: 1;
+            flex-basis: 300px;
+            margin: 0 10px;
+        }
+        
+        .sobre-img{
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 160px;
+            margin: 0 10px;
+        }
+        
+        .sobre-info h1{
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+        
+        .sobre-info p{
+            font-size: 18px;
+            line-height: 1.4;
+            margin-bottom: 30px;
+            color: #7c7c7c;
+        }
+        
+        /* SEÇÃO PRODUTOS */
+
+        .produtos {
+            max-width: 960px;
+            margin: 50px auto;
+        }
+
+        .produtos h1 {
+            font-size: 50px;
+            margin: 0 10px 50px 10px
+        }
+
+        .produtos-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end; /* itens do container alinhados no final */
+            justify-content: center;
+        }
+
+        .produtos-item{
+            flex-grow: 1;
+            margin: 10px;
+            max-width: 300px;
+        }
+        
+        .produtos-item img{
+            max-width: 300px;
+        }
+
+        .produtos-item h2 {
+            font-size: 25px;
+            color: #a4a4a4;
+            background: #f7f7f7;
+            padding: 50px 20px; /* 50px pra cima e pra baixo, 20px pra um lado e pro outro */
+        }
+
+        .purple {
+            border-top: 8px solid #ae81ff;
+        }
+
+        .pink {
+            border-top: 8px solid #f9265e;
+        }
+
+        .blue {
+            border-top: 8px solid #66d9eb;
+        }
+        
+         /* SEÇÃO PREÇOS */
+        
+        .precos{
+            background: #f7f7f7;
+            padding: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        
+        .preco-item{
+            flex: 1;
+            border: 4px solid white;
+            padding: 10px;
+            margin: 10px;
+            min-width: 260px;
+            max-width: 360px;
+            text-align: center;
+        }
+        
+        .preco-item h2{
+            font-size: 25px;
+            color: #a4a4a4;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .preco-item span{
+            max-width: 275px;
+            margin: 20px auto;
+            display: block;
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+            padding: 10px 0 5px 0;
+            border-top: 4px solid white;
+            border-bottom: 4px solid white;
+        }
+        
+        .preco-item i{
+            color: #7c7c7c;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        
+        .preco-item a{
+            max-width: 275px;
+            display: block;
+            margin: 20px auto;
+            border: 4px solid;
+            color: #222222;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 25px;
+            padding: 10px 0;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        html{scroll-behavior: smooth;}
+        
+    </style>
+    
+    
+  <body>
+    
+      <section id="top">
+          <div class="container-navbar-sup-bg">
+            <div class="container-navbar-sup">
+                <span>Seg a Sex 09:00hrs as 18:00hrs</span>
+                <a href="#">+55 21 9 9999-9999</a>
+                <span>Av. Logo Ali n° 998, Santa Cruz - Rio de Janeiro</span>
+            </div>
+          </div>
+          <div class="container-navbar-inf-bg">
+            <div class="container-navbar-inf">
+                <h2>Lorem Ipsum</h2>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+          </div>
+      </section>
+      
+      <h1 class="intro">Novos valores e<br> propriedades do CSS</h1>
+      
+      <section id="sobre" class="sobre">
+          <div class="sobre-info">
+            <h1>Sobre</h1>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.  
+            </p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.  
+            </p>
+          </div>
+          <div class="sobre-img">
+            <img src="img/sobre1.jpg" alt="sobre imagem 01">
+          </div>
+          <div class="sobre-img">
+            <img src="img/sobre2.jpg" alt="sobre imagem 01">
+          </div>
+      </section>
+      
+      <section class="produtos" id="produtos">
+		<h1>Produtos</h1>
+		<div class="produtos-container">
+			<div class="produtos-item purple">
+				<h2>Purple</h2>
+				<img src="img/produtos1.jpg" alt="Produtos 1">
+			</div>
+			<div class="produtos-item pink">
+				<h2>Pink</h2>
+				<img src="img/produtos2.jpg" alt="Produtos 2">
+			</div>
+			<div class="produtos-item blue">
+				<h2>Blue</h2>
+				<img src="img/produtos3.jpg" alt="Produtos 3">
+			</div>
+		</div>
+	   </section>
+        
+      
+      <section class="precos" id="precos">
+
+	      <div class="preco-item">
+            <h2>Plano Cobre</h2>
+            <span><sup>R$</sup>19,90</span>
+
+                <i>Planos ilimitados</i><br>
+                <i>Acesso restrito</i><br>
+                <i>Conteúdo secreto</i><br>
+                <i>Suporte 24h</i>
+
+            <a href="#">Comprar</a>
+          </div>
+          <div class="preco-item">
+            <h2>Plano Prata</h2>
+            <span><sup>R$</sup>39,90</span>
+
+                <i>Planos ilimitados</i><br>
+                <i>Acesso restrito</i><br>
+                <i>Conteúdo secreto</i><br>
+                <i>Suporte 24h</i><br>
+                <i>Compras exclusivas</i>
+
+            <a href="#">Comprar</a>
+          </div>
+          <div class="preco-item">
+            <h2>Plano Ouro</h2>
+            <span><sup>R$</sup>49,90</span>
+            
+                <i>Planos ilimitados</i><br>
+                <i>Acesso restrito</i><br>
+                <i>Conteúdo secreto</i><br>
+                <i>Suporte 24h</i><br>
+                <i>Compras exclusivas</i><br>
+                <i>Download do conteúdo</i>
+            
+            <a href="#">Comprar</a>
+          </div>
+              
+      </section>
+      
+      
+  </body>
+</html>
