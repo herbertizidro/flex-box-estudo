@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>Lorem Ipsum - Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</title>
+    <title>Lorem Ipsum - Lorem Ipsum blá blá blá.</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     
@@ -241,6 +241,92 @@
             text-decoration: none;
         }
         
+        /* SEÇÃO QUALIDADE */
+        
+        .qualidade{
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+        
+        .qualidade-item{
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 300px;
+            margin: 20px 10px;
+        }
+        
+        .qualidade-item h2{
+            font-size: 25px;
+            color: #a4a4a4;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        
+        /* borda vertical colorida à esquerda do h2  - before coloca algum conteúdo antes de um elemento(H2 nesse caso) */
+
+        .qualidade-item h2::before{ /* borda */
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        
+        .qualidade-item:nth-last-of-type(1) h2::before{ /* seleciona o primeiro elemento do tipo ".qualidade-item" e especifica em seguida o before do H2 */
+            background: #66d9eb;
+        }
+        
+        .qualidade-item:nth-last-of-type(2) h2::before{
+            background: #f9265e;
+        }
+        
+        .qualidade-item:nth-last-of-type(3) h2::before{
+            background: #ae81ff;
+        }
+        
+        .qualidade-item:nth-last-of-type(4) h2::before{
+            background: #66d9eb;
+        }
+        
+        .qualidade-item:nth-last-of-type(5) h2::before{
+            background: #f9265e;
+        }
+        
+        .qualidade-item:nth-last-of-type(6) h2::before{
+            background: #ae81ff;
+        }
+        
+        /* borda vertical colorida à esquerda do h2 */
+        
+        .qualidade-item p{
+            font-size: 18px;
+            line-height: 1.4;
+            color: #7c7c7c;
+        }
+        
+        /* FOOTER */
+        
+        footer{
+            display: flex;
+            background: #2c70ff;
+            height: 200px;
+            align-items: center;
+        }
+        
+        footer p{
+            flex-grow: 1;
+            text-align: center;
+            font-size: 18px;
+            color: #122ab2;
+        }
+        
         html{scroll-behavior: smooth;}
         
     </style>
@@ -251,8 +337,8 @@
       <section id="top">
           <div class="container-navbar-sup-bg">
             <div class="container-navbar-sup">
-                <span>Seg a Sex 09:00hrs as 18:00hrs</span>
-                <a href="#">+55 21 9 9999-9999</a>
+                <span>Seg / Sex - 08:00 às 18:00</span>
+                <a href="tel:+552199999999">+55 21 9 9999-9999</a>
                 <span>Av. Logo Ali n° 998, Santa Cruz - Rio de Janeiro</span>
             </div>
           </div>
@@ -262,8 +348,7 @@
                 <ul>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#produtos">Produtos</a></li>
-		    <li><a href="#precos">Preço</a></li>
-		    <li><a href="#qualidade">Qualidade</a></li>
+                    <li><a href="#qualidade">Qualidade</a></li>
                 </ul>
             </div>
           </div>
@@ -348,6 +433,70 @@
           </div>
               
       </section>
+      
+      
+      <section class="qualidade" id="qualidade">
+          
+          <div class="qualidade-item">
+          
+              <h2>Compacto</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+              </p>
+          
+          </div>
+          
+          <div class="qualidade-item">
+          
+              <h2>Inteligente</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+              </p>
+          
+          </div>
+          
+          <div class="qualidade-item">
+          
+              <h2>Econômico</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+              </p>
+          
+          </div>
+          
+          <div class="qualidade-item">
+          
+              <h2>Transparente</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+              </p>
+          
+          </div>
+          
+          <div class="qualidade-item">
+          
+              <h2>Flexível</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+              </p>
+          
+          </div>
+          
+          <div class="qualidade-item">
+          
+              <h2>Resistente</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+              </p>
+          
+          </div>
+          
+      </section>
+        
+      
+      <footer>
+        <p>Lorem Ipsum © Todos os direitos reservados.</p>
+      </footer>
       
       
   </body>
