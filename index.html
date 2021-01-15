@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lorem Ipsum - Lorem Ipsum blá blá blá.</title>
     <meta charset="utf-8">
+      
+    <!-- jquery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    
+    <!-- jquery effects -->
+    <script type="text/javascript" src="js/app.js"></script>
   
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     
-    </head>
-    
+    </head>    
     
     <style>
         
@@ -192,7 +197,7 @@
         }
         
          /* SEÇÃO PREÇOS */
-       
+        
         .precos{
             background: #f7f7f7;
             padding: 25px;
@@ -337,10 +342,30 @@
             color: white;
         }
         
+        /* SCROLL ANIMAÇÃO */
+        
         html{scroll-behavior: smooth;}
+	    
+	/* EFEITO MÁQUINA DE ESCREVER DA INTRO - CURSOR PISCANDO */
+        /*
+        .intro:after{
+            content: '|';
+            margin-left: 5px;
+            opacity: 1;
+            animation: flash .7s infinite;
+        }
+
+        @keyframes flash{
+            0%, 100%{
+                opacity: 1;
+            }
+            50%{
+                opacity: 0;
+            }
+        }
+        */
         
     </style>
-    
     
   <body>
     
@@ -364,9 +389,9 @@
           </div>
       </section>
       
-      <h1 class="intro">Lorem Ipsum is<br> simply dummy text</h1>
+      <h1 class="intro">Lorem Ipsum is simply dummy text!</h1>
       
-      <section id="sobre" class="sobre">
+      <section id="sobre" class="sobre anime">
           <div class="sobre-info">
 	    <h1>Sobre</h1>
             <p>
@@ -384,7 +409,7 @@
           </div>
       </section>
       
-      <section class="produtos" id="produtos">
+      <section class="produtos anime" id="produtos">
 		<h1>Produtos</h1>
 		<div class="produtos-container">
 			<div class="produtos-item purple">
@@ -403,7 +428,7 @@
       </section>
         
       
-      <section class="precos" id="precos">
+      <section class="precos anime" id="precos">
 
 	      <div class="preco-item">
             <h2>Plano Cobre</h2>
@@ -445,7 +470,7 @@
       </section>
       
       
-      <section class="qualidade" id="qualidade">
+      <section class="qualidade anime" id="qualidade">
           
           <div class="qualidade-item">
           
@@ -511,3 +536,4 @@
       
   </body>
 </html>
+
